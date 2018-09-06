@@ -15,8 +15,8 @@
 
 <ul>
   {{#each burgers}}
-    {{#unless devoured}}
-      {{> cats/cat-block sleep=true}}
-    {{/unless}}
+    <div>
+      Burger Name: {{burger_name}}
+    </div>
   {{/each}}
 </ul>
