@@ -9,7 +9,7 @@ var orm = {
         });
     },
     insertOne: function(tableName, colName, burgerName, cb){
-        var queryString = "INSERT INTO ??(??) VALUES ?";
+        var queryString = "INSERT INTO ??(??) VALUES (?)";
         connection.query(queryString, [tableName, colName, burgerName], function(err, result){
             if(err) throw err;
             cb(result);
